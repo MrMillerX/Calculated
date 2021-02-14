@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class GetValue {
     Scanner getValue = new Scanner(System.in);
-    public String getNumbers(){
+    public String value(){
         System.out.print("Пожалуйста, введите два числа, и знак вычисления: ");
-        String value = getValue.nextLine();
-        return value;
+        return getValue.nextLine();
     }
 
 }
