@@ -4,7 +4,7 @@ public class GetCalculation {
     int num1;
     int num2;
     double resultDouble;
-    int resultInt;
+    int result;
 
     public GetCalculation(int num1, int num2) {
         this.num1 = num1;
@@ -13,22 +13,22 @@ public class GetCalculation {
 
     public int addition() {
 
-        resultInt = num1 + num2;
-        return resultInt;
+        result = num1 + num2;
+        return result;
     }
 
     public int subtraction() {
-        resultInt = num1 - num2;
-        return resultInt;
+        result = num1 - num2;
+        return result;
     }
 
     public int multiplication() {
-        resultInt = num1 * num2;
-        return resultInt;
+        result = num1 * num2;
+        return result;
     }
 
-    public double division() {
-        resultDouble = num1 / num2;
-        return resultDouble;
+    public int division() {
+        result = num1 / num2;
+        return result;
     }
 }
