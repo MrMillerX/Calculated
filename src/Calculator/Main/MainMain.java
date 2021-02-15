@@ -1,5 +1,6 @@
 package Calculator.Main;
 
+import Calculator.Classes.CheckNotation;
 import Calculator.Classes.GetCalculation;
 import Calculator.Classes.GetSplit;
 import Calculator.Classes.GetValue;
@@ -10,14 +11,15 @@ public class MainMain {
         GetValue getValue = new GetValue();
         String value = getValue.value();
 
-//        CheckNotation checkNotation = new CheckNotation(value);
+        CheckNotation checkNotation = new CheckNotation(value);
+        boolean checkResult = checkNotation.checkNotationNums();
+
 
         GetSplit getSplit = new GetSplit(value);
 
         int[] numbers = getSplit.getSplitNums();
         int num1 = numbers[0];
         int num2 = numbers[1];
-
         String sign = getSplit.getSplitSign();
         char[] signChar = new char[1];
         signChar = sign.toCharArray();
