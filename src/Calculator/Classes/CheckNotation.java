@@ -11,29 +11,15 @@ public class CheckNotation {
     GetSplit getSplit = new GetSplit(check);
 
     public boolean checkNotationNums() {
-        try {
-            getSplit.getSplitNums();
-            return true;
-        } catch (NumberFormatException ex) {
+        String[] numbersResult = check.split("\\++|-+|\\*+|/+");
+        try{
+            int[] nums = new int[2];
+            nums[0] = Integer.parseInt(numbersResult[0]);
+        }
+        catch (NumberFormatException ex){
             return false;
         }
+        return true;
     }
 
 }
-//        check = check.replaceAll("\\s*", "");
-//        String[] numbersResult = check.split("\\++|-+|\\*+|/+");
-//        try{
-//            int[] nums = new int[2];
-//            nums[0] = Integer.parseInt(numbersResult[0]);
-//        }
-//        catch (NumberFormatException ex){
-//            return false;
-//        }
-//    }
-//    public int checkNotation(){
-//        try {
-//            check.matches();
-//
-//        }
-//    }
-//}

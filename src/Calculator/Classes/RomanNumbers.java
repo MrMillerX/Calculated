@@ -4,7 +4,7 @@ public class RomanNumbers {
     String[] romanNumbers = new String[101];
 
     public String[] getRomanNumbers() {
-        romanNumbers[0] = "Римский ноль";
+        romanNumbers[0] = "0";
         romanNumbers[1] = "I";
         romanNumbers[2] = "II";
         romanNumbers[3] = "III";

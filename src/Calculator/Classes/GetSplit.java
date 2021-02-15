@@ -9,7 +9,6 @@ public class GetSplit {
 
     public int[] getSplitNums() {
         splitValue = splitValue.replaceAll("\\s*", "");
-//        splitValue = splitValue.replaceAll("\\+|-|\\*/","\s");
         String[] splitResult = splitValue.split("\\++|-+|\\*+|/+");
         int[] nums = new int[2];
         nums[0] = Integer.parseInt(splitResult[0]);
@@ -22,7 +21,7 @@ public class GetSplit {
         String splitResult;
         String[] splitSignResult = new String[1];
         splitValue = splitValue.replaceAll("\\s*", "");
-        splitResult = splitValue.replaceAll("[1234567890IVX]", "");
+        splitResult = splitValue.replaceAll("[1234567890ivxIVX]", "");
         return splitResult;
     }
 }
