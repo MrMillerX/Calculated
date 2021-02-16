@@ -21,7 +21,7 @@ public class GetSplit {
         String splitResult;
         String[] splitSignResult = new String[1];
         splitValue = splitValue.replaceAll("\\s*", "");
-        splitResult = splitValue.replaceAll("[1234567890ivxIVX]", "");
+        splitResult = splitValue.replaceAll("[1234567890ivxlcIVXLC]", "");
         return splitResult;
     }
 }

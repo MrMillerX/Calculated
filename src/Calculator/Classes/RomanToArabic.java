@@ -13,7 +13,7 @@ public class RomanToArabic {
         int[] numbers = new int[2];
         splitResult[0] = splitResult[0].toUpperCase();
         splitResult[1] = splitResult[1].toUpperCase();
-        String[] roman = new String[150];
+        String[] roman = new String[101];
         boolean compare;
 
         for (int i=0; i<transform.length; i++) {

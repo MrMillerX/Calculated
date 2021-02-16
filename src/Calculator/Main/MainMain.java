@@ -8,6 +8,14 @@ public class MainMain {
         GetValue getValue = new GetValue();
         String value = getValue.value();
 
+        CheckValue checkValue = new CheckValue(value);
+        boolean check = checkValue.getCheckValue();
+        if (check==false){
+            System.out.println("К сожалению, вы ввели неправильное выражение. Повторите попытку снова.");
+        }
+        else {
+
+
         GetSplit getSplit = new GetSplit(value);
 
         int num1;
@@ -54,6 +62,8 @@ public class MainMain {
         }
         else {
             System.out.println("Ничего не получилось.");
+            }
+
         }
 
     }
