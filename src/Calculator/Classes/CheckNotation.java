@@ -1,7 +1,7 @@
 package Calculator.Classes;
 
 public class CheckNotation {
-    String check = new String();
+    String check;
 
     //    GetValue value = new GetValue();
     public CheckNotation(String check) {
@@ -12,11 +12,10 @@ public class CheckNotation {
 
     public boolean checkNotationNums() {
         String[] numbersResult = check.split("\\++|-+|\\*+|/+");
-        try{
-            int[] nums = new int[2];
-            nums[0] = Integer.parseInt(numbersResult[0]);
-        }
-        catch (NumberFormatException ex){
+        try {
+            int[] numbs = new int[2];
+            numbs[0] = Integer.parseInt(numbersResult[0]);
+        } catch (NumberFormatException ex) {
             return false;
         }
         return true;
