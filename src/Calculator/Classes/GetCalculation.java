@@ -3,7 +3,6 @@ package Calculator.Classes;
 public class GetCalculation {
     int num1;
     int num2;
-    double resultDouble;
     int result;
 
     public GetCalculation(int num1, int num2) {

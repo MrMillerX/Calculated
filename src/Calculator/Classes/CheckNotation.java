@@ -8,9 +8,7 @@ public class CheckNotation {
         this.check = check;
     }
 
-    GetSplit getSplit = new GetSplit(check);
-
-    public boolean checkNotationNums() {
+    public boolean checkNotationNumbs() {
         String[] numbersResult = check.split("\\++|-+|\\*+|/+");
         try {
             int[] numbs = new int[2];

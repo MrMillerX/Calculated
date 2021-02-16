@@ -21,10 +21,10 @@ public class MainMain {
             int num2;
 
             CheckNotation checkNotation = new CheckNotation(value);
-            boolean checkResult = checkNotation.checkNotationNums();
+            boolean checkResult = checkNotation.checkNotationNumbs();
 
             if (checkResult) {
-                int[] numbers = getSplit.getSplitNums();
+                int[] numbers = getSplit.getSplitNumbs();
                 num1 = numbers[0];
                 num2 = numbers[1];
             } else {

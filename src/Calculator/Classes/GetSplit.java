@@ -7,19 +7,18 @@ public class GetSplit {
         this.splitValue = splitValue;
     }
 
-    public int[] getSplitNums() {
+    public int[] getSplitNumbs() {
         splitValue = splitValue.replaceAll("\\s*", "");
         String[] splitResult = splitValue.split("\\++|-+|\\*+|/+");
-        int[] nums = new int[2];
-        nums[0] = Integer.parseInt(splitResult[0]);
-        nums[1] = Integer.parseInt(splitResult[1]);
-        return nums;
+        int[] numbs = new int[2];
+        numbs[0] = Integer.parseInt(splitResult[0]);
+        numbs[1] = Integer.parseInt(splitResult[1]);
+        return numbs;
 
     }
 
     public String getSplitSign() {
         String splitResult;
-        String[] splitSignResult = new String[1];
         splitValue = splitValue.replaceAll("\\s*", "");
         splitResult = splitValue.replaceAll("[1234567890ivxlcIVXLC]", "");
         return splitResult;
