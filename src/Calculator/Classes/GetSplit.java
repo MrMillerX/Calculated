@@ -8,7 +8,7 @@ public class GetSplit {
     }
 
     public int[] splitValue() {
-        String[] splitResult = check.split("/\\+|-|\\*|");
+        String[] splitResult = check.split("[+\\-*/]");
         int[] numbs = new int[2];
         numbs[0] = Integer.parseInt(splitResult[0]);
         numbs[1] = Integer.parseInt(splitResult[1]);
@@ -18,7 +18,7 @@ public class GetSplit {
     public int[] transform() {
         RomanNumbers romanNumbers = new RomanNumbers();
         String[] transform = romanNumbers.getRomanNumbers();
-        String[] splitResult = check.split("/\\+|-|\\*|");
+        String[] splitResult = check.split("[+\\-*/]");
         int[] numbers = new int[2];
         String[] roman = new String[101];
         boolean compare;

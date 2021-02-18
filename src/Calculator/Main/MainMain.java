@@ -13,13 +13,13 @@ public class MainMain {
         CheckValue checkValue = new CheckValue(value);
         boolean checkRight = checkValue.getCheckRight();
         if (!checkRight) {
-            System.out.println("Введённое выражение неверно. Попробуйте снова," +
+            System.out.println("\nВведённое выражение неверно. Попробуйте снова," +
                     " но на этот раз по формату \"1 + 1\", c числами от 1 до 10 включительно.");
         } else {
             boolean checkNotation = checkValue.checkNotation();
+
             int num1;
             int num2;
-
 
             GetSplit getSplit = new GetSplit(value);
 

@@ -13,7 +13,7 @@ public class CheckValue {
 
 
     public boolean checkNotation() {
-        return check.matches("([1-9]?|10)[+\\-*/]([1-9]?|10)");
+        return check.matches("([1-9]?|10|11)[+\\-*/]([1-9]?|10|11)");
     }
 
     public boolean checkSpelling() {
